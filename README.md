@@ -3,15 +3,10 @@ textAngular v1.5.0
 
 [![Build Status](https://travis-ci.org/fraywing/textAngular.png?branch=master)](https://travis-ci.org/fraywing/textAngular) [![Coverage Status](https://coveralls.io/repos/fraywing/textAngular/badge.png)](https://coveralls.io/r/fraywing/textAngular)
 
+#### This is just a fork using Ionicon instead of Font Awesome
+#### Check the [repo](https://github.com/fraywing/textAngular) for the original version
 
 Demo is available at: http://www.textangular.com (Or editable [Plunkr Demo](http://plnkr.co/edit/kKPfk0LCXWrMpZ1gkblb?p=preview))
-
-#### Upgrading From 1.2.2 or earlier
-
-To upgrade from version 1.2.2 or earlier you need to follow these steps:
-
-1. The styling for textAngular is now in the `dist/textAngular.css` file, you will need to include this or a copy of it with your own modifications.
-2. The rangy library is now required, you will need both the `rangy-core` and `rangy-saveselection` modules, alternatively you can include the compressed version (`textAngular-rangy.min.js`) in the dist folder
 
 ## Requirements
 
@@ -25,61 +20,9 @@ To upgrade from version 1.2.2 or earlier you need to follow these steps:
 
 **NOTE:** Our `textAngular-sanitize.js` and angular.js's `angular-sanitize.js` are the SAME file, you must include one or the other but not both. We highly recommend using `textAngular-sanitize.js` as it loosens some parts of the sanitizer that are far too strict for our uses and adds some more features we need.
 
-**Via Bower:**
-
-Run `bower install textAngular` from the command line.
-Include script tags similar to the following:
-```html
-<link rel='stylesheet' href='/bower_components/textAngular/dist/textAngular.css'>
-<script src='/bower_components/textAngular/dist/textAngular-rangy.min.js'></script>
-<script src='/bower_components/textAngular/dist/textAngular-sanitize.min.js'></script>
-<script src='/bower_components/textAngular/dist/textAngular.min.js'></script>
-```
-
-**Via NPM:**
-
-Run `npm install textangular` from the command line.
-Include script tags similar to the following:
-```html
-<link rel='stylesheet' href='/node_modules/textangular/dist/textAngular.css'>
-<script src='/node_modules/textangular/dist/textAngular-rangy.min.js'></script>
-<script src='/node_modules/textangular/dist/textAngular-sanitize.min.js'></script>
-<script src='/node_modules/textangular/dist/textAngular.min.js'></script>
-```
-Install using commonjs (eg componentjs, Webpack, Browserify):
-```
-angular.module('myModule', [require('angular-sanitize'), require('textAngular')]);
-```
-Optionally, install textAngular-santize.min.js by requiring it BEFORE requring textAngular:
-```
-require('textangular/dist/textAngular-sanitize.min');
-angular.module('myModule', [require('textAngular')]);
-```
-For CSS support with Webpack, install the style-loader, css-loader (and postcss-loader) and configure the loader in your webpack.config.js similar to the following:
-```
-loaders: [
-  {test: /\.css$/, loader: 'style!css!postcss'}
-]
-```
-
-**Via CDNJS:**
-
-Include script tags similar to the following:
-```html
-<script src='http://cdnjs.cloudflare.com/ajax/libs/textAngular/1.3.0/textAngular-sanitize.min.js'></script>
-<script src='http://cdnjs.cloudflare.com/ajax/libs/textAngular/1.3.0/textAngular.min.js'></script>
-```
-
-**Via jsDelivr:**
-
-Include script tag similar to the following: (For details on how this works see: [https://github.com/jsdelivr/jsdelivr#load-multiple-files-with-single-http-request](https://github.com/jsdelivr/jsdelivr#load-multiple-files-with-single-http-request))
-```html
-<script src='http://cdn.jsdelivr.net/g/angular.textangular@1.3.0(textAngular-sanitize.min.js+textAngular.min.js)'></script>
-```
-
 **Via Github**
 
-Download the code from [https://github.com/fraywing/textAngular/releases/latest](https://github.com/fraywing/textAngular/releases/latest), unzip the files then add script tags similar to the following:
+Download the code from [https://github.com/theBliz/textAngular](https://github.com/theBliz/textAngular), unzip the files then add script tags similar to the following:
 ```html
 <link rel='stylesheet' href='/path/to/unzipped/files/dist/textAngular.min.css'>
 <script src='/path/to/unzipped/files/dist/textAngular-rangy.min.js'></script>
