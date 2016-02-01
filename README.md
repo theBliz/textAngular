@@ -27,6 +27,7 @@ Download the code from [https://github.com/theBliz/textAngular](https://github.c
 <link rel='stylesheet' href='/path/to/unzipped/files/dist/textAngular.min.css'>
 <script src='/path/to/unzipped/files/dist/textAngular-rangy.min.js'></script>
 <script src='/path/to/unzipped/files/dist/textAngular-sanitize.min.js'></script>
+<script src='/path/to/unzipped/files/dist/textAngularSetup.js'></script>
 <script src='/path/to/unzipped/files/dist/textAngular.min.js'></script>
 ```
 
@@ -34,8 +35,8 @@ Download the code from [https://github.com/theBliz/textAngular](https://github.c
 
 1. Include (`rangy-core.js` and `rangy-saveselection.js`) or `textAngular-rangy.min.js` in your project using script tags
 2. Include `textAngular-sanitize.js` or `textAngular-sanitize.min.js` in your project using script tags
-3. Include (`textAngularSetup.js` and `textAngular.js`) or `textAngular.min.js` (textAngularSetup.js is included inside textAngular.min.js)
-4. Add a dependency to `textAngular` in your app module, for example: ```angular.module('myModule', ['textAngular'])```.
+3. Include (`textAngularSetup.js` and `textAngular.js`)
+4. Add a dependency to `ngSanitize` and `textAngular` in your app module, for example: ```angular.module('myModule', ['ngSanitize','textAngular'])```.
 5. Create an element to hold the editor and add an `ng-model="htmlVariable"` attribute where `htmlVariable` is the scope variable that will hold the HTML entered into the editor:
 ```html
 <div text-angular ng-model="htmlVariable"></div>
